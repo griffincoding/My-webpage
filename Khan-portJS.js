@@ -14,22 +14,25 @@ var yPositions = [processing.random( 1, 400), processing.random( 1, 400), proces
 var colors = [ 0, 50, 100, 150, 200, 255];
 
 processing.draw = function() {
-    processing.background(48, 159, 179);
-    console.log(processing.mouse)
+    processing.background(100,150,230);
     
-    var mouseClicked = function() {
-    processing.xPositions.processing.push(processing.random(0,400));
-    processing.yPositions.processing.push(processing.random(0,400));
+    
+    processing.mouseClicked = function() {
+   xPositions.push(processing.mouseX);
+   yPositions.push(processing.mouseY);
+
     }
     
     for (var i = 0; i < xPositions.length; i++) {
         
         processing.noStroke();
-        processing.fill(colors[i], colors[i], 0);
-        processing.ellipse(xPositions[i], yPositions[i] , 10, 10);
-        processing.ellipse(xPositions[i]+ 70, yPositions[i] +35, 10, 10);
+        processing.fill(255,255,255);
+        processing.ellipse(xPositions[i ]+ processing.random(-2, 2), yPositions[i] , 10, 10);
+        //Line below makes it so two drops form when user clicks
+        //processing.ellipse(xPositions[i]+ 70, yPositions[i] +35, 10, 10);
         
         yPositions[i] += 1;
+
         
         if(yPositions[i] > 500) {
             yPositions[i] = -100;

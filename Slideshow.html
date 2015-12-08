@@ -1,0 +1,91 @@
+<html>
+<head>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.16/processing.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <style>
+  body {
+    background-color: rgb(200,230,255);
+  }
+    button {
+      width: 200px;
+      position: fixed;
+      top: 497px;
+      left: 463px;
+
+    }
+    #start {
+      
+      color: rgb(50,200,50);
+      font-weight: bold;
+    }
+    #stop {
+      left: 680px;
+      color:red;
+      font-weight: bold;
+    }
+  #table {
+    background: rgb(0, 0, 77);
+    border: solid;
+    border-color: rgb(0, 0, 77);
+    border-top: none;
+    margin-left: 0px;
+    margin-top:  0px;
+    margin-right: -1000000px;
+    border-right-width:820px;
+  }
+  #name {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-indent: 10px;
+  }
+  #khan {
+    text-indent: 30px;
+    font-size: 20px;
+
+  }
+  #slide {
+    text-indent: 10px;
+    font-size: 20;
+  }
+  #blog {
+    text-indent: 10px;
+    font-size: 20px;
+  }
+  #img {
+    width: 50px;
+    border-radius: 25px;
+  }
+  #image {
+    position: fixed;
+    left: 183px;
+  }
+  .current {
+  color: white;
+  }
+
+  </style>
+</head>
+<body>
+
+<table id="table"> 
+  <tr>
+    <td><img id="img" src="Khan/profile.jpg"></td>
+    <td id="name"> David Klingler </td> 
+    <td id="khan"> <a href="C:\Users\David.Kids-SAM-Laptop\Desktop\Webpage\My-webpage/Khan-Port.html"> Khan-Port </a></td> 
+    <td id="slide" class = "current"> <a href="C:\Users\David.Kids-SAM-Laptop\Desktop\Webpage\My-webpage/Slideshow.html"> <strong class = "current"> Slideshow </strong> </a></td> 
+    <td id="blog"> <a href="blogger.html"> Blog </a> </td> 
+  </tr> 
+</table>
+
+<br>
+<br>
+  <img id="image" src="Khan/Breakfast.png">
+  
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+</body>
+<script type="text/javascript" src="SlideshowJS.js">
+</script>
+</html>
