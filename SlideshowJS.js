@@ -9,6 +9,7 @@ $(document).ready(function() {
   var currentImg = -1;
   var globalTimer;
   var transTimer;
+  var buttonFunction = 0;
   slide.width = 1000;
   slide.height = 400;
   
@@ -20,11 +21,16 @@ $(document).ready(function() {
   }
   }, 10);
   var startClicked = function() {
-    globalTimer = setInterval(changeCurrentImage, 10000);
-  }
-
-  var stopClicked = function() {
-    clearInterval(globalTimer);
+    if (buttonFunction === 0) {
+     globalTimer = setInterval(changeCurrentImage, 10000);
+     buttonFunction = 5;
+     console.log(buttonFunction); 
+    }
+    else if (buttonFunction === 5) {
+      clearInterval(globalTimer);
+      buttonFunction = 0;
+      console.log(buttonFunction);
+    }
   }
 
   var changeCurrentImage = function() {
@@ -39,5 +45,4 @@ $(document).ready(function() {
 }
    
   start.addEventListener("click", startClicked);
-  stop.addEventListener("click", stopClicked);
 });
