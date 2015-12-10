@@ -7,11 +7,11 @@ $(document).ready(function() {
   } 
 
 //start of khan code
-var xPositions = [processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400),processing.random( 1, 400)];
+var xPositions = [processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random(1, 400)];
    
 var yPositions = [processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random( 1, 400), processing.random(1, 400)];
 
-var colors = [ 0, 50, 100, 150, 200, 255];
+
 
 processing.draw = function() {
     processing.background(100,150,230);
